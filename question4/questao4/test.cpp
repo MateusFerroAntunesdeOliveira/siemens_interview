@@ -47,9 +47,13 @@ void ConcatERemove(string a, string b, int k) {
 }
 
 TEST(Siemens07Test, ConcatERemoveTest) {
-    ConcatERemove("blablablabla", "blablabcde", 4);
     // EXPECT_EQ(1, 1);
     // EXPECT_TRUE(true);
+    
+    //-> Esperado "NAO"
+    ConcatERemove("blablablabla", "blablabcde", 4);
+    //-> Esperado "SIM"
+    ConcatERemove("blablablabla", "blablabcde", 8);
 }
 
 int main(int argc, char* argv[]) {
